@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
+
  root 'home#index'
 
  post "results" => 'home#results'
  get "results" => 'home#results'
+
+get "/auth/:provider/callback" => "sessions#create"
+  get "/signout" => "sessions#destroy", :as => :signout
 
  get "test" => 'home#test'
 
