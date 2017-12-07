@@ -1,0 +1,41 @@
+<h1>Where to get fresh <%= params[:term] %> in <%= params[:address] %></h1>
+
+<div class="container">
+	<div class="row" >
+		<% @beauties.each do |r| %>
+		<div class="col-md-4">
+			<div class="well center-it">
+				<center><p><%= image_tag r.image, style: "height: 200px; width: 200px;"  %></p><center>
+        <h3><%= r.name %></h3>
+        <h4><%= link_to "Visit Profile", r.url %></h4>
+        <p>
+          <%= r.address %>
+        </p>
+        <p>
+          <%= r.address2 %>
+        </p><p>
+          <%= r.address3 %>
+        </p>
+        <p>
+          <%= r.city %>
+        </p>
+        <p>
+          <%= r.phone %>
+        </p>
+        <p>
+          <%= r.price %>
+        </p>
+        <p>
+          <%= r.rating do %>
+          	 <span class="glyphicon glyphicon-star"></span>
+          <% end %>	 
+
+        </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>     
+
+
+<h3><%= link_to "Search Again...", root_path, class: 'btn btn-primary' %>

@@ -1,0 +1,16 @@
+<center><h1>Salon Finder</h1></center>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-1">
+    <div class="well">
+        <h3>Let's Find Your New Salon!</h3>
+					<div>
+					    <%= form_tag results_path do %>
+					        <%= text_field_tag :term, nil, placeholder: "Wash, Haircut, Braids", class: "form-control" %><br />
+					        <%= text_field_tag :address, nil, placeholder:"Where...", class: "form-control" %><br />
+					        <%= submit_tag "Find My Fly!", class: "btn btn-primary" %>
+					    <% end %>
+					</div>
+       </div>
+    </div>
+</div>
