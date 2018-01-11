@@ -19,6 +19,8 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'bootstrap-sass'
+gem 'fog'
+gem 'carrierwave'
 gem 'figaro'
 gem 'httparty'
 gem 'omniauth-instagram'
