@@ -3,11 +3,9 @@
 	<% if current_user %>
 	     Welcome <strong><%= current_user.name %></strong>!<br />
 	    <%= image_tag current_user.image %><br />
-		  
 	    <%= link_to "Sign out", signout_path, id: "sign_out" %>
 	<% else %>
-	     <%= link_to "Sign in with Instagram", "/auth/instagram", class: "btn-instagram"%>
-		    
+	     <%= link_to "Sign in with Instagram", "/auth/instagram", class: "btn btn-block btn-social btn-instagram"%>
 	<% end %>
 </div>
 
