@@ -24,6 +24,7 @@ gem 'carrierwave'
 gem 'figaro'
 gem 'httparty'
 gem 'omniauth-instagram'
+gem 'omniauth-google-oauth2', '~> 0.4.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
